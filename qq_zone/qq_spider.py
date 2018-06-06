@@ -10,11 +10,11 @@ import configparser
 from qq_zone.get_Frends_list import frends_list
 
 
-# 爬取qq空间，获取好友那出错，留着学习吧
+# 爬取qq空间，获取好友列表没有获取到，留着学习吧
 # https://zhuanlan.zhihu.com/p/28240021
 class Spider(object):
     def __init__(self):
-        self.web = webdriver.Chrome("E:\PycharmProjects/chromedriver.exe")
+        self.web = webdriver.Chrome("E:\PycharmProjects\spider3\chromedriver_win32\chromedriver.exe")
         self.web.get('https://user.qzone.qq.com')
         config = configparser.ConfigParser(allow_no_value=False)
         config.read('userinfo.ini')
